@@ -1,0 +1,358 @@
+* {
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  /*background-image: url(20201022124535.jpg);*/
+  background: black;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main {
+  background: rgb(61, 61, 61);
+  border: 3px solid rgb(61, 61, 61);
+  box-sizing: border-box;
+  text-align: center;
+  width: auto;
+  height: 90px;
+  overflow: hidden;
+  margin-top: -1vh;
+
+  /* animation: fadeInDown;
+    animation-duration: 1s;
+     */
+}
+
+.main span {
+  color: yellow;
+}
+/*THE DANIELS MAIN HEADER.*/
+.the {
+  color: rgb(248, 10, 109);
+}
+.main a {
+  padding: 5px;
+  justify-items: space-around;
+  font-weight: bold;
+  font-size: 1.6em;
+  padding-bottom: 10px;
+}
+
+.main p {
+  top: auto;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-size: 35px;
+  margin-bottom: 20px;
+  padding-bottom: -20px;
+  top: 100px;
+  justify-content: space-around;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  padding-top: -50px;
+}
+
+.dropbox {
+  color: rgb(97, 96, 96);
+
+  margin-left: 1000px;
+  font-size: 1.1em;
+  margin-top: -40px;
+  cursor: pointer;
+}
+
+.dropbox:hover {
+  background-color: rgb(247, 244, 244);
+  width: 227px;
+  color: rgb(0, 0, 0);
+}
+
+.clr {
+  clear: both;
+}
+.navbar {
+  text-align: center;
+  background-image: url(logomakr-8x5lyk.png);
+  background-position: center center;
+  background-size: cover;
+  animation: bounce;
+  animation-duration: 2s;
+  position: sticky;
+  top: 0.2rem;
+}
+.navbar li {
+  list-style: none;
+  display: inline;
+  justify-content: space-around;
+  margin-left: 50px;
+  color: black;
+  transition-property: all;
+  transition-duration: 2s;
+  justify-content: center;
+}
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar li:hover {
+  color: crimson;
+  transform: scale(0.5);
+}
+
+@media (orientation: portrait) {
+  .navbar li {
+    display: inline;
+    margin-left: 15px;
+
+    padding: 5px;
+    transition-property: all;
+  }
+  .navbar li:hover {
+    transform: scale(0.5);
+  }
+  .navbar {
+    background-image: none;
+    border: 2px solid yellow;
+    background-color: yellow;
+    height: 50px;
+    width: 450px;
+    position: relative;
+    margin-left: 30px;
+  }
+}
+.active {
+  background-color: white;
+}
+
+.logo {
+  bottom: 625px;
+  /* position: sticky;
+    top: 0.25rem;*/
+  margin-left: 20px;
+
+  top: 80px;
+}
+.logo img {
+  margin-top: -70px;
+  float: left;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.main-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 4em;
+  box-sizing: border-box;
+  margin-top: 100px;
+  margin-left: 30px;
+  grid-auto-rows: minmax(100px, auto);
+  font-size: 1.2rem;
+  /* animation: meme 5s ease-in 3s infinite alternate forwards;*/
+}
+
+.sidebar {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 50px;
+}
+
+@media (orientation: portrait) {
+  .main-bar {
+    display: flex;
+    flex-direction: initial;
+  }
+}
+
+/*@keyframes meme{
+    0%{
+        opacity: 0,left:-50px;
+    }
+    50%{
+        opacity: 5,left:0px;
+    }
+}*/
+
+.vid {
+  margin-left: 150px;
+  background-attachment: fixed;
+  margin-top: 1vh;
+}
+
+.footer p {
+  margin-left: 350px;
+  font-style: italic;
+  font-size: 1.6rem;
+  align-items: center;
+}
+
+.footer {
+  background: black;
+  color: white;
+  width: auto;
+  height: 100px;
+  /*top: 1000px;*/
+  position: relative;
+  bottom: 0;
+
+  border: 10px solid rgb(0, 0, 0);
+}
+
+.bubbles img {
+  display: inline;
+  bottom: 0;
+  align-items: stretch;
+  padding: 20px;
+  margin-left: 50px;
+  animation: bubble 5s linear infinite;
+}
+
+@keyframes bubble {
+  100% {
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+
+.bubbles img:nth-child(1) {
+  animation-delay: 2s;
+}
+.bubbles img:nth-child(2) {
+  animation-delay: 1s;
+}
+.bubbles img:nth-child(3) {
+  animation-delay: 3.5s;
+}
+
+.bubbles img:nth-child(4) {
+  animation-delay: 2.5s;
+}
+.bubbles img:nth-child(5) {
+  animation-delay: 4s;
+}
+.bubbles img:nth-child(6) {
+  animation-delay: 3s;
+}
+.bubbles {
+  bottom: -900px;
+  position: absolute;
+}
+
+a:visited {
+  color: gray;
+}
+.service-background {
+  border: 10px solid silver;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 1300px;
+  height: 1300px;
+  background-color: silver;
+}
+
+.service-input li {
+  font-size: 1.6rem;
+  padding: 50px;
+  color: white;
+}
+
+.imgtxt img {
+  width: 40vh;
+  height: 40vh;
+  margin-left: 55px;
+  margin-top: 90px;
+  /*box-shadow: 20px 10px 10px 10px gray;*/
+  cursor: pointer;
+  /*transition-property: all;*/
+  transition-duration: 0.7s;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+
+.imgtxt img:hover {
+  transform: scale(1.2);
+  box-shadow: 20px 20px 50px 10p black;
+}
+
+/*.sideimg{
+    width: 60vh;
+    height: 60vh;
+    margin-left: 750px;
+    margin-top: -60vh;
+    cursor: pointer;
+    box-shadow: 20px 10px 10px 10px gray;
+    
+}
+
+ .sideimg img:hover{
+    box-shadow: 20px 20px 50px 10px black;
+
+}*/
+
+/*.img-txt p{
+    
+    margin-left: 50px;
+    margin-top: -150px;
+    margin-bottom: 30vh;
+    
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 1.1rem;
+}*/
+
+/*.IMG-TXT2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px,auto);
+    grid-column-gap: 1em;
+    box-sizing: border-box;
+}*/
+
+/*.sidebar-fixed{
+    display: grid;
+    margin-top: 20px;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+
+}*/
+
+.familyframe {
+  background: rgb(255, 41, 76);
+  color: white;
+  height: 60px;
+  width: 300px;
+  margin-left: 500px;
+  animation: familytree;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.familyframe p {
+  margin-left: 9vh;
+  font-weight: bold;
+  font-size: 1.6em;
+  margin-top: 20vh;
+  padding-top: 15px;
+  cursor: pointer;
+}
+@keyframes familytree {
+  0% {
+    background: rgb(228, 3, 3);
+  }
+
+  100% {
+    background: rgb(255, 41, 76);
+  }
+}

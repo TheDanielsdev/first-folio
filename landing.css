@@ -1,0 +1,93 @@
+body{
+    background-image: url(3ddback.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+
+}
+
+.landing-navs ul li{
+    list-style: none;
+    color: yellow;
+    display: inline-table;
+    margin-left: 150px;
+    align-items: center;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 2s;
+    padding: 15px;
+    margin-top: 100px;
+
+}
+
+.landing-navs li:hover{
+
+    color: red;
+    background: white;
+    transform: scale(0.9)
+}
+
+.landing-navs a:visited{
+    color: gray;
+    background: black;
+}
+
+.landing img{
+    width: 60vh;
+    height: 60vh;
+    cursor: pointer;
+    margin-left: 450px;                                          
+    
+}
+
+.bubbles img{
+    display: inline;
+    width: 70px;
+    height: 70px;
+    align-items: stretch;
+    padding: 20px;
+    margin-left: 80px;
+    bottom: -100vh;
+    animation: bubble 5s linear infinite;
+   
+
+}
+
+@keyframes bubble{
+  
+   
+
+    100%{
+    transform: translateY(-80vh);
+    opacity: 0;
+}
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    
+}
+.bubbles img:nth-child(2){
+
+    animation-delay: 0.5s;
+
+}
+.bubbles img:nth-child(3){
+    animation-delay: 3.5s;
+}
+
+.bubbles img:nth-child(4){
+    animation-delay: 2.5s;
+
+}
+.bubbles img:nth-child(5){
+    animation-delay: 4s;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 3s;
+}
+.bubbles{
+   /* bottom: -900px;*/
+    position: absolute;
+}
